@@ -4,6 +4,15 @@
 
 -----------------
 
+## Angular
+Known for: 
+* mini.co.uk campaign
+* YouTube interface on PS3, PS4 and PSVita
+
+----------------
+
+### Angular - Does well:
+* 
 
 # Good Things
 
