@@ -15,10 +15,12 @@
   </head>
 
   <body ng-controller="BasicCtrl">
-    <h5> {{ whisky.name }} {{ whisky.price | number:2 }} </h5>
-    <input type="range" ng-model="whisky.price"></input>
-    <input type="text" ng-model="whisky.name"></input>
-    <button ng-click="inflation()">Inflation</button>
+    <section>
+      <h5> {{ whisky.name }} {{ whisky.price | number:2 }} </h5>
+      <input type="range" ng-model="whisky.price"></input>
+      <input type="text" ng-model="whisky.name"></input>
+      <button ng-click="inflation()">Inflation</button>
+    </section>
     <section>
 <pre>
 <code class="language-javascript">
@@ -55,17 +57,19 @@ angular.module('example')
 
 <section> 
 <pre><code class="language-markup">
-&lt;h5&gt; &#123;&#123; whisky.name &#125;&#125; &#123;&#123; whisky.price | number: 2 &#125;&#125; &lt;/h5&gt;
-&lt;input type="range" ng-model="whisky.price"&gt;&lt;/input&gt;
-&lt;input type="text" ng-model="whisky.name"&gt;&lt;/input&gt;
-&lt;button ng-click="inflation()"&gt;&lt;/button&gt;
+&lt;section ng-controller="BasicCtrl"&gt;
+  &lt;h5&gt; \{\{ whisky.name \}\} \{\{ whisky.price | number: 2 \}\} &lt;/h5&gt;
+  &lt;input type="range" ng-model="whisky.price"&gt;&lt;/input&gt;
+  &lt;input type="text" ng-model="whisky.name"&gt;&lt;/input&gt;
+  &lt;button ng-click="inflation()"&gt;&lt;/button&gt;
+&lt;/section&gt;
 </code><pre>
 </section>
 
 
 
     <script src="prism.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.7/angular.min.js"></script>
     <script>
 angular.module('example', []); // initiate module and declare dependencies: none;
 
