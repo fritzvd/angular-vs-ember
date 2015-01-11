@@ -1,0 +1,99 @@
+<!doctype html>
+<html ng-app="example">
+
+  <head>
+    <meta charset="utf8">
+    <title> Angular Example </title>
+    <style>
+      body {
+        padding: 1em;
+        vertical-align: middle;
+        font-family: sans;
+      }
+    </style>
+    <link href="prism.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body ng-controller="BasicCtrl">
+    <h5> {{ whisky.name }} {{ whisky.price | number:2 }} </h5>
+    <input type="range" ng-model="whisky.price"></input>
+    <input type="text" ng-model="whisky.name"></input>
+    <button ng-click="inflation()">Inflation</button>
+    <section>
+<pre>
+<code class="language-javascript">
+angular.module('example', []); // initiate module and declare dependencies: none;
+
+angular.module('example')
+  .controller('BasicCtrl', ['$scope', 'Economics', function ($scope, Economics) {
+    $scope.whisky = {
+      price: 40,
+      name: "Lagavullin"
+    };
+
+    $scope.inflation = function () {
+      $scope.whisky.price = Economics.inflation($scope.whisky.price);
+    };
+  }]);
+
+angular.module('example')
+  .service('Economics', function () {
+
+    var _rate = 1.02; // 2%
+    
+    function Inflation (price) {
+      return price * _rate;
+    };
+
+    return {
+      inflation: Inflation  
+    }
+  });
+</code>
+</pre> 
+    </section>
+
+<section> 
+<pre><code class="language-markup">
+&lt;h5&gt; {{ whisky.name }} {{ whisky.price | number: 2 }} &lt;/h5&gt;
+&lt;input type="range" ng-model="whisky.price"&gt;&lt;/input&gt;
+&lt;input type="text" ng-model="whisky.name"&gt;&lt;/input&gt;
+&lt;button ng-click="inflation()"&gt;&lt;/button&gt;
+</code><pre>
+</section>
+
+
+
+    <script src="prism.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script>
+angular.module('example', []); // initiate module and declare dependencies: none;
+
+angular.module('example')
+  .controller('BasicCtrl', ['$scope', 'Economics', function ($scope, Economics) {
+    $scope.whisky = {
+      price: 40,
+      name: "Lagavullin"
+    };
+
+    $scope.inflation = function () {
+      $scope.whisky.price = Economics.inflation($scope.whisky.price);
+    };
+  }]);
+
+angular.module('example')
+  .service('Economics', function () {
+
+    var _rate = 1.02; // 2%
+    
+    function Inflation (price) {
+      return price * _rate;
+    };
+
+    return {
+      inflation: Inflation  
+    }
+  });
+    </script>
+  </body>
+</html>
