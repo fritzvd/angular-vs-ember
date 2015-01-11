@@ -13,7 +13,7 @@ Known for:
 
 
 
-## The good
+## Angular - The good
 
 * Data binding, two-way all the way.
 * Seperation of concerns is fairly easy
@@ -22,14 +22,15 @@ Known for:
 * There are more ways to skin a cat.
 * Dependency Injection.
 * Declarative templates
+---
 
-## The bad
+## Angular - The bad
 
 * It's hard to find people who make big apps that agree on things.
 * The documentation has only recently caught up, and remains complex.
 * It's being maintained by Google
 * There are more ways to skin a cat.
-
+* Change detection vs digest loop
 
 ## Example time:
-
+Small example portraying how easy 2-way binding is.
