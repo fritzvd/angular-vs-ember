@@ -12,11 +12,24 @@ Known for:
 ---
 
 
-### Angular - Does well:
-* Data binding
-* 
 
-# Good Things
+## The good
+
+* Data binding, two-way all the way.
+* Seperation of concerns is fairly easy
+* Promises out-of-the-box
+* Testing is part of architecture
+* There are more ways to skin a cat.
+* Dependency Injection.
+* Declarative templates
+
+## The bad
+
+* It's hard to find people who make big apps that agree on things.
+* The documentation has only recently caught up, and remains complex.
+* It's being maintained by Google
+* There are more ways to skin a cat.
 
 
-# Bad Things
+## Example time:
+
