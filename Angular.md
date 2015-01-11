@@ -13,6 +13,7 @@ Known for:
 
 
 ### Angular - Does well:
+* Data binding
 * 
 
 # Good Things
