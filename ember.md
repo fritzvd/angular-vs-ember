@@ -13,6 +13,7 @@ Known for:
 * Skylight: https://www.skylight.io
 * New Heroku dashboard: https://dashboard-next.heroku.com/
 * Square dashboard: https://squareup.com/
+* Vine: http://www.talentbuddy.co/blog/building-with-ember-js-at-vine/
 * More http://builtwithember.io/
 
 ---
@@ -31,4 +32,4 @@ Known for:
 
 * Testing. It's getting better, but QUnit? Ughhh.
 
-* Big and slow (http://www.filamentgroup.com/lab/mv-initial-load-times.html?utm_source=Ember+Weekly&utm_campaign=02e4a4a90a-Ember_Weekly_Issue_87&utm_medium=email&utm_term=0_e96229d21d-02e4a4a90a-106349833). But they hired Jony Ive.
+* Big and slow (http://www.filamentgroup.com/lab/mv-initial-load-times.html?utm_source=Ember+Weekly&utm_campaign=02e4a4a90a-Ember_Weekly_Issue_87&utm_medium=email&utm_term=0_e96229d21d-02e4a4a90a-106349833). But they hired Jony Ive. (https://speakerdeck.com/tomdale/ember-2-dot-0-in-practice)
