@@ -14,6 +14,10 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content {
+        font-size: 24px;
+      }
+      h2#ember {color: #F23818;}
     </style>
   </head>
   <body>
@@ -24,7 +28,9 @@ class: center, middle
 # Angular vs. Ember
 ## The ultimate showdown
 
-![Ember](http://www.gravatar.com/avatar/0cf15665a9146ba852bf042b0652780a?s=200)
+![Angular vs. Ember](/angular-vs-ember/img/angular-vs-ember.png)
+
+Utrecht JS Meetup 2015-01-15
 
 ---
 
@@ -38,31 +44,33 @@ class: center, middle
 
 # Tom
 
-* Developer at Brightin
+* Developer at [Brightin](http://www.brightin.nl)
 * Ember developer since 2013
-* Always namedrops Appuccino
+* Always namedrops [Appuccino](http://www.drinkappuccino.nl)
+
+.right[![Appuccino](/angular-vs-ember/img/appuccino.png)]
 
 ---
 
 # Brightin
 
-Example project!!!
+.center[![iLost](/angular-vs-ember/img/ilost.png)]
 
 ---
 
-## Angular
+# Angular
 Known for:
 * mini.co.uk campaign
 * YouTube interface on PS3, PS4 and PSVita
 
 ---
 
-## Ember
-* Skylight: https://www.skylight.io
-* New Heroku dashboard: https://dashboard-next.heroku.com/
-* Square dashboard: https://squareup.com/
-* Vine: http://www.talentbuddy.co/blog/building-with-ember-js-at-vine/
-* More http://builtwithember.io/
+# Ember
+* [Skylight](https://www.skylight.io)
+* [New Heroku dashboard](https://dashboard-next.heroku.com/)
+* [Square dashboard](https://squareup.com/)
+* [Vine](http://www.talentbuddy.co/blog/building-with-ember-js-at-vine/)
+* More: [builtwithember.io](http://builtwithember.io/)
 
 ---
 
@@ -81,46 +89,51 @@ Known for:
 
 ## Example time Angular:
 Easy 2-way binding.
-[Example](http://fritzvd.com/angular-vs-ember/angular-example.html)
+[Example](/angular-vs-ember/angular-example.html)
 
 Seperation of Concerns
-[Example](http://fritzvd.com/angular-vs-ember/angular-example-services.html)
+[Example](/angular-vs-ember/angular-example-services.html)
 
 
 ---
 
 ## Example time Ember:
 
----
-
-# Separation of concerns
-
-## Ember
-
-* MVC structure (much like Rails)
-* ES6 modules and Bower out of the box
-
-## Angular
-
-* MVC-ish. Angular has its own terminology and structure. 
-* Services make it easy to isolate business logic
-* Easily create module/lib for general purpose
+Easy 2-way binding.
+[Example](/angular-vs-ember/ember-example.html)
 
 ---
 
 # Testing &amp; tooling
 
+## Ember
+
+* **ember-cli** is the way to go
+* Built in testframework is **QUnit**
+* Other frameworks are supported
+
+
 ## Angular
 
 * Karma test runner was born around angular
 * jasmine/mocha/qunit you choose
-* grunt and gulp plugins are ubiquitous. 
+* grunt and gulp plugins are ubiquitous.
+
+---
+
+# Separation of concerns
+
+## Angular
+
+* MVC-ish. Angular has its own terminology and structure.
+* Services make it easy to isolate business logic
+* Easily create module/lib for general purpose
 
 ## Ember
 
-* ember-cli is the way to go
-* Built in testframework is QUnit
-* Mocha is supported
+* MVC structure
+* Routes are different but cool
+* **ES6 modules** and Bower out of the box
 
 ---
 
@@ -130,7 +143,7 @@ Seperation of Concerns
 
 * Rails-like project setup
 * Usually one way to do things
-* Ember Data is very opinionated
+* **Ember Data** is very (too) opinionated
 
 ## Angular
 * Lots of ways to do things
@@ -148,22 +161,24 @@ Seperation of Concerns
 
 ## Ember
 
-* RSVP is used by Ember
-* And its available to you
+* **RSVP** is used by Ember
+* Lots of things internally are promises
+* And it's available to you
 
 ---
 
 # Documentation
 
+## Ember
+
+* Guides and API docs
+* Strong, but smaller community
+* Watch out for outdated info
+
 ## Angular
 
 * Complex, but keeps getting better
 * Lots of excellent blog posts contradict each other 😂
-
-## Ember
-
-* Guides and API docs
-* Community is great
 
 ---
 
@@ -178,8 +193,9 @@ Seperation of Concerns
 ## Ember
 
 * Faster and smaller
-* HTMLBars which brings the awesome of React
-* Backwards compatible!
+* Controllers are out. **Components** become central.
+* **HTMLBars** which brings the awesome of React
+* **Backwards compatible!**
 
 ---
 
@@ -205,9 +221,31 @@ Seperation of Concerns
 
 ## Good
 
+* Awesome defaults
+* Get up and running fast
+* Nothing is a POJO
+
 ## Bad
 
 * Big and slow
+* Ember Data
+* Nothing is a POJO
+
+---
+
+.center[![Fatality](http://gartic.uol.com.br/imgs/mural/_l/_l_sixteen/fatality.png)]
+
+---
+
+class: center, middle
+
+# Angular vs. Ember
+## The ultimate showdown
+
+# Questions?
+
+Utrecht JS Meetup 2015-01-15
+
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
